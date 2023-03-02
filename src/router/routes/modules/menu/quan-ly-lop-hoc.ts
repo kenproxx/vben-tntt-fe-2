@@ -14,7 +14,7 @@ const page: AppRouteModule = {
   meta: {
     orderNo: 20,
     icon: 'ion:aperture-outline',
-    title: 'Quản lý lớp học',
+    title: 'Quản lý Lớp học',
   },
   children: [
     // =============================form start=============================
@@ -23,7 +23,7 @@ const page: AppRouteModule = {
       name: 'lop-hoc',
       component: () => import('/@/views/quan-ly-lop-hoc/index.vue'),
       meta: {
-        title: 'Quản lý Lớp học',
+        title: 'Lớp học',
         ignoreKeepAlive: true,
       },
 

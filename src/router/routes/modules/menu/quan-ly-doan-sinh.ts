@@ -23,7 +23,7 @@ const page: AppRouteModule = {
       name: 'doan-sinh',
       component: () => import('/@/views/quan-ly-doan-sinh/doan-sinh/index.vue'),
       meta: {
-        title: 'Quản lý Đoàn sinh',
+        title: 'Đoàn sinh',
         ignoreKeepAlive: true,
       },
     },
@@ -32,7 +32,7 @@ const page: AppRouteModule = {
       name: 'huynh-truong',
       component: () => import('/@/views/quan-ly-doan-sinh/huynh-truong/index.vue'),
       meta: {
-        title: 'Quản lý Huynh trưởng',
+        title: 'Huynh trưởng',
         ignoreKeepAlive: true,
       },
     },

@@ -14,16 +14,16 @@ const page: AppRouteModule = {
   meta: {
     orderNo: 20,
     icon: 'ion:aperture-outline',
-    title: 'Quản lý sa mạc',
+    title: 'Quản lý Sa mạc',
   },
   children: [
     // =============================form start=============================
     {
-      path: 'huynh-truong',
-      name: 'huynh-truong',
-      component: () => import('/@/views/quan-ly-doan-sinh/huynh-truong/index.vue'),
+      path: 'sa-mac',
+      name: 'sa-mac',
+      component: () => import('/@/views/quan-ly-sa-mac/index.vue'),
       meta: {
-        title: 'Quản lý Huynh Trưởng',
+        title: 'Sa mạc',
         ignoreKeepAlive: true,
       },
     },

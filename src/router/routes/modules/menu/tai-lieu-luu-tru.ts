@@ -21,9 +21,9 @@ const page: AppRouteModule = {
     {
       path: 'danh-sach',
       name: 'danh-sach',
-      component: () => import('/@/views/quan-ly-doan-sinh/huynh-truong/index.vue'),
+      component: () => import('/@/views/tai-lieu-luu-tru/index.vue'),
       meta: {
-        title: 'Quản lý Huynh Trưởng',
+        title: 'Tài liệu',
         ignoreKeepAlive: true,
       },
     },
