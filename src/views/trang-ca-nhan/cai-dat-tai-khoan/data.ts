@@ -10,6 +10,7 @@ export interface ListItem {
 }
 const colLienHe = 12;
 const colTTkhac = 8;
+const labelWidth = 150;
 // tab的list
 export const settingList = [
   {
@@ -39,31 +40,36 @@ export const thongTinCaNhanSchemas: FormSchema[] = [
   {
     field: 'email',
     component: 'Input',
-    label: '邮箱',
+    label: 'Tên thánh',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
   {
     field: 'name',
     component: 'Input',
-    label: '昵称',
+    label: 'Tên gọi',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
   {
     field: 'introduction',
-    component: 'InputTextArea',
-    label: '个人简介',
+    component: 'DatePicker',
+    label: 'Ngày tháng năm sinh',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
   {
     field: 'phone',
     component: 'Input',
-    label: '联系电话',
+    label: 'Số điện thoại',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
   {
     field: 'address',
     component: 'Input',
     label: '所在地区',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
 ];
@@ -72,131 +78,137 @@ export const thongTinLienHeSchemas: FormSchema[] = [
     field: 'tenBo',
     component: 'Input',
     label: 'Tên thánh/ tên gọi Bố',
+    labelWidth: labelWidth,
     colProps: { span: colLienHe },
   },
   {
     field: 'tenBo',
     component: 'Input',
     label: 'Số điện thoại Bố',
+    labelWidth: labelWidth,
     colProps: { span: colLienHe },
   },
   {
     field: 'tenBo',
     component: 'Input',
     label: 'Tên thánh/ tên gọi Mẹ',
+    labelWidth: labelWidth,
     colProps: { span: colLienHe },
   },
   {
     field: 'tenBo',
     component: 'Input',
     label: 'Số điện thoại Mẹ',
+    labelWidth: labelWidth,
     colProps: { span: colLienHe },
   },
   {
     field: 'tenBo',
-    component: 'Input',
-    label: 'Tên thánh/ tên gọi Bố',
+    component: 'ApiTreeSelect',
+    label: 'Giáo xứ',
+    labelWidth: labelWidth,
     colProps: { span: colLienHe },
   },
   {
     field: 'tenBo',
-    component: 'Input',
-    label: 'Tên thánh/ tên gọi Bố',
-    colProps: { span: colLienHe },
-  },
-  {
-    field: 'tenBo',
-    component: 'Input',
-    label: 'Tên thánh/ tên gọi Bố',
-    colProps: { span: colLienHe },
-  },
-  {
-    field: 'tenBo',
-    component: 'Input',
-    label: 'Tên thánh/ tên gọi Bố',
+    component: 'InputTextArea',
+    label: 'Địa chỉ hành chính',
+    labelWidth: labelWidth,
     colProps: { span: colLienHe },
   },
 ];
 export const thongTinKhacSchemas: FormSchema[] = [
   {
     field: 'ngayRuaToi',
-    component: 'Input',
+    component: 'DatePicker',
     label: 'Ngày rửa tội',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'nguoiRuaToi',
     component: 'Input',
     label: 'Người rửa tội',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'nguoiDoDauRuaToi',
     component: 'Input',
     label: 'Người đỡ đầu',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'ngayThemSuc',
-    component: 'Input',
+    component: 'DatePicker',
     label: 'Ngày thêm sức',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'nguoiThemSuc',
     component: 'Input',
     label: 'Người thêm sức',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'nguoiDoDauThemSuc',
     component: 'Input',
     label: 'Người đỡ đầu',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'ngayKetHon',
-    component: 'Input',
+    component: 'DatePicker',
     label: 'Ngày kết hôn',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'phoiNgauId',
     component: 'Input',
     label: 'Phối ngẫu',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'nguoiLamChung1',
     component: 'Input',
     label: 'Người làm chứng 1',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
   {
     field: 'nguoiLamChung2',
     component: 'Input',
     label: 'Người làm chứng 2',
+    labelWidth: labelWidth,
     colProps: { span: colTTkhac },
   },
 ];
 export const doiMatKhauSchemas: FormSchema[] = [
   {
     field: 'email',
-    component: 'Input',
+    component: 'InputPassword',
     label: 'Mật khẩu cũ',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
   {
     field: 'name',
-    component: 'Input',
+    component: 'InputPassword',
     label: 'Mật khẩu mới',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
   {
     field: 'introduction',
-    component: 'Input',
+    component: 'InputPassword',
     label: 'Nhập lại mật khẩu mới',
+    labelWidth: labelWidth,
     colProps: { span: 18 },
   },
 ];
-

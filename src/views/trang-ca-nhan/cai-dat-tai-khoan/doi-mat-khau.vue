@@ -34,11 +34,10 @@
         showActionButtonGroup: false,
       });
 
-      onMounted(async () => {
-        const data = await accountInfoApi();
-        setFieldsValue(data);
-      });
-
+      // onMounted(async () => {
+      //   const data = await accountInfoApi();
+      //   setFieldsValue(data);
+      // });
 
       return {
         register,
