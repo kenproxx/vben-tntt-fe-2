@@ -1,18 +1,14 @@
 <template>
-  <PageWrapper
-    :title="`用户` + userId + `的资料`"
-    content="这是用户资料详情页面。本页面仅用于演示相同路由在tab中打开多个页面并且显示不同的数据"
-    contentBackground
-    @back="goBack"
-  >
+  <PageWrapper :title="`Thông tin tài khoản`" contentBackground @back="goBack">
     <template #extra>
-      <a-button type="primary" danger> 禁用账号 </a-button>
-      <a-button type="primary"> 修改密码 </a-button>
+      <a-button type="primary" danger>Chỉnh sửa</a-button>
+      <a-button type="primary">Lưu</a-button>
     </template>
     <template #footer>
       <a-tabs default-active-key="detail" v-model:activeKey="currentKey">
-        <a-tab-pane key="detail" tab="用户资料" />
-        <a-tab-pane key="logs" tab="操作日志" />
+        <a-tab-pane key="detail" tab="Chi tiết" />
+        <a-tab-pane key="logs" tab="Lịch sử thao tác" />
+        <!--        chỉ admin cấp cao mới được quyền xem lịch sử thao tác-->
       </a-tabs>
     </template>
     <div class="pt-4 m-4 desc-wrap">
